@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memooo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id ='container'>
+        <div class="app-header" id = 'app-header'>
+            <div class="settings" id = 'settings'>
+                <div class="cardback"><label for="backs">Pick the card jacket!</label>
+                    <select id="backpicker" name="backs">
+                        <option class="opt" value="url('img/roses.png') no-repeat center center / cover">Roses</option>
+                        <option class="opt" value="url('img/poppies.jpeg') no-repeat center center / cover">Poppies
+                        </option>
+                        <option class="opt" value="url('img/green.jpeg') no-repeat center center / cover">Green</option>
+                        <option class="opt" value="url('img/fish.jpeg') no-repeat center center / cover">Fish</option>
+                        <option class="opt" value="url('img/birds.png') no-repeat center center / cover">Birds</option>
+                    </select></div>
+                <div class="level">
+                    <label for="level">Pick the level!</label>
+                    <input name="level" type="range" min="1" max="16" value="0" id="slider">
+                </div>
+            </div>
+            <div id="timer">GO!</div>
+            <div id="current"><span>Level </span>
+                <span id="levelnumber">1</span>
+            </div>
+        </div>
+        <div class="playground" id="playground">
+            <div class="card" value="3"></div>
+            <div class="card" value="3"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
