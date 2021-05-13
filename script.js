@@ -162,7 +162,7 @@ function avoidCrazyClicking () {
         playGround.style.pointerEvents = 'none';
         setTimeout(() => {
             playGround.style.pointerEvents = 'auto';
-        }, 700)
+        }, 500)
 }
 
 function runTheGame() {
@@ -178,7 +178,7 @@ function runTheGame() {
     level.onchange = addCards;
     let timerStarter = setInterval(timerRunner, 1000);
     clearInterval(timerStarter);
-    playGround.addEventListener('dblclick', avoidCrazyClicking )
+    playGround.addEventListener('click', avoidCrazyClicking )
 
 }
 
