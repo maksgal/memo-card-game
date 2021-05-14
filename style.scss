@@ -3,46 +3,46 @@ html {
     font-size: 30px;
 
     body {
-        margin: 0;
         min-height: 100vh;
         background: url('img/background.jpeg') no-repeat center center / cover;
     }
 
     .container {
         max-width: 1000px;
-        margin: 25px auto 0px;
-        padding: 10px, 10px;
+        margin: 0 auto;
+        padding: 20px 10px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         align-content: center;
-        min-height: 100vh;
+        min-height: 60vh;
 
-          .button   {
+        .button {
             font-size: 25px;
             min-width: 150px;
             min-height: 60px;
             color: rgb(0, 0, 0);
-            background-color:rgb(246, 219, 183);
+            background-color: rgb(246, 219, 183);
             transition: all 0.5s ease;
             border: none;
             border-radius: 5px;
             margin: 50px auto 0;
             cursor: pointer;
             box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8);
-            
-            
+
+
             &:hover {
                 background-color: rgb(246, 219, 183);
                 transform: scale(1.1);
                 box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.8);
                 color: rgb(0, 0, 0);
             }
+
             &:active {
                 transform: scale(1.08)
             }
-         }
+        }
 
 
         .app-header {
@@ -51,7 +51,8 @@ html {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 80px;
+
             .settings {
                 display: flex;
                 flex-direction: column;
@@ -92,14 +93,21 @@ html {
         }
 
         .playground {
-            margin: 0 auto 50px;
+            min-height:60vh;
+            margin: 0 auto;
             max-width: 810px;
             font-size: 100px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            align-content: center;
-            min-height: 70vh;
+            justify-items: center;
+            align-items: center;
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+            }
 
             .card {
                 display: inline-block;
@@ -112,7 +120,7 @@ html {
                 cursor: pointer;
                 box-shadow: -20px 30px 30px rgba(0, 0, 0, 0.8);
                 transition: background-image 0.7s, transform 0.7s, opacity 1s;
-                
+
 
                 &_turned {
                     box-shadow: 50px 30px 30px rgba(0, 0, 0, 0.8);

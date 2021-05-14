@@ -4,15 +4,14 @@ html {
 }
 
 html body {
-  margin: 0;
   min-height: 100vh;
   background: url("img/background.jpeg") no-repeat center center/cover;
 }
 
 html .container {
   max-width: 1000px;
-  margin: 25px auto 0px;
-  padding: 10px, 10px;
+  margin: 0 auto;
+  padding: 20px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,15 +19,15 @@ html .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 html .container .button {
@@ -72,7 +71,7 @@ html .container .app-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 html .container .app-header .settings {
@@ -128,9 +127,23 @@ html .container .app-header #current {
 }
 
 html .container .playground {
-  margin: 0 auto 50px;
+  min-height: 60vh;
+  margin: 0 auto;
   max-width: 810px;
   font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .playground .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,7 +154,6 @@ html .container .playground {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  min-height: 70vh;
 }
 
 html .container .playground .card {
@@ -155,10 +167,10 @@ html .container .playground .card {
   cursor: pointer;
   -webkit-box-shadow: -20px 30px 30px rgba(0, 0, 0, 0.8);
           box-shadow: -20px 30px 30px rgba(0, 0, 0, 0.8);
-  -webkit-transition: background-image 0.7s, opacity 0.5s, -webkit-transform 0.7s;
-  transition: background-image 0.7s, opacity 0.5s, -webkit-transform 0.7s;
-  transition: background-image 0.7s, transform 0.7s, opacity 0.5s;
-  transition: background-image 0.7s, transform 0.7s, opacity 0.5s, -webkit-transform 0.7s;
+  -webkit-transition: background-image 0.7s, opacity 1s, -webkit-transform 0.7s;
+  transition: background-image 0.7s, opacity 1s, -webkit-transform 0.7s;
+  transition: background-image 0.7s, transform 0.7s, opacity 1s;
+  transition: background-image 0.7s, transform 0.7s, opacity 1s, -webkit-transform 0.7s;
 }
 
 html .container .playground .card_turned {

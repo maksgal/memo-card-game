@@ -4,6 +4,7 @@ const level = document.getElementById('slider'),
     back = document.getElementById('backpicker'),
     cards = document.getElementsByClassName("card"),
     playGround = document.getElementById('playground'),
+    cards_field = document.getElementById('cards'),
     cardsTurned = document.getElementsByClassName('card_turned'),
     timer = document.getElementById('timer'),
     levelNum = document.getElementById('levelnumber'),
@@ -12,10 +13,11 @@ const level = document.getElementById('slider'),
     newGame = document.createElement('button'),
     startButton = document.createElement('button');
 
-// Изначальное время в секундах
+// Start time in seconds(increases by 30 each round)
 let totalSecs = 60,
-    //количество уровней (до 25)
-    amountLevels = 10;
+// Number of levels (up to 25) 
+    amountLevels = 20;
+    level.setAttribute('max', amountLevels)
 
 function createNewGameButton() {
     newGame.classList.add('button');
@@ -48,7 +50,7 @@ function addCards() {
         for (let k = 0; k < 2; k++) {
             let newCard = document.createElement("div");
             newCard.classList.add('card');
-            playGround.appendChild(newCard);
+            cards_field.appendChild(newCard);
             arOfValues.push(i);
 
         }
@@ -65,9 +67,8 @@ function addCards() {
 
 function openCloseCard() {
     if (this.classList.contains('card_turned')) {
-        setTimeout(() => {
-        this.classList.remove('card_turned');
-        this.style.background = back.value;},300)
+        this.classList.remove('card_turned')
+        this.style.background = back.value;
     } else {
         this.classList.add('card_turned');
         for (let card of cardsTurned) {
