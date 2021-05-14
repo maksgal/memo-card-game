@@ -163,7 +163,7 @@ function avoidCrazyClicking () {
         playGround.style.pointerEvents = 'none';
         setTimeout(() => {
             playGround.style.pointerEvents = 'auto';
-        }, 500)
+        }, 300)
 }
 
 function runTheGame() {
