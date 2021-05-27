@@ -60,6 +60,14 @@ html .container .button:active {
           transform: scale(1.08);
 }
 
+html .container .username_input {
+  font-size: 25px;
+  min-width: 120px;
+  outline: none;
+  -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8);
+}
+
 html .container .app-header {
   margin: 0 auto;
   width: 100%;
@@ -179,5 +187,16 @@ html .container .playground .card_turned {
   -webkit-transform: rotateY(180deg) scale(1.1);
           transform: rotateY(180deg) scale(1.1);
   opacity: 1;
+}
+
+html .container .playground .card_inactive {
+  background-color: transparent;
+  pointer-events: none;
+}
+
+html #leaders {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.39);
+  padding: 0px 0 20px;
 }
 /*# sourceMappingURL=style.css.map */
